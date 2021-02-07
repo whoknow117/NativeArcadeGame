@@ -1,11 +1,22 @@
 {
   "name": "game",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoknow117/NativeArcadeGame.git"
+  },
+  "bugs": {
+    "url": "https://github.com/whoknow117/NativeArcadeGame/issues"
+  },
+  "homepage": "https://github.com/whoknow117/NativeArcadeGame#readme",
+  "description": "",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
