@@ -7,8 +7,22 @@ const randomPrize = (space) => {
         let enemy = document.createElement('span');
         enemy.className = "random-enemy";
         space.appendChild(enemy);
+        let x = Math.floor(Math.random() * window.innerWidth);
 
+        let duration= Math.random() * 1;
+        let h = Math.random() * 1;
+        let left = 0;
         enemy.style.left = x + 'px';
+        enemy.style.top = 0 + 'px';
+        enemy.style.width = 140 + 'px';
+        enemy.style.background = "url( https://lh3.googleusercontent.com/proxy/IKxh5Fb4ntxUdKQ5XvXb6Fcit8yd9LQrT5vzX536dGi1LFrhcGe0p3-izPk6cEG9ZeztqeWErAb6dte86dZqvQz1PS2aXIQs)"
+        enemy.style.height = 150 + h + 'px';
+        enemy.style.backgroundSize = "cover";
+        enemy.style.animationDuration = duration + 's';
+        enemy.style.left = x + 'px';
+        enemy.style.transform = 'rotate(180deg)';
+        enemy.style.animation = 'move 2s infinite linear';
+
     }
 
 }
@@ -41,8 +55,7 @@ function getStars(){
             space.appendChild(star);
             i++
         }
-        let left = 50;
-        let top = 0;
+
 
 
     } )
